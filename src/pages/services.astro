@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="services">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Services</div>
+    <p class="mb-5">Listed below are the services I offer, you can enquire about them by directly <a href="/"><b>contacting me</b></a> or by going to my freelancing profiles on listed on my home page.</p>
+  </div>
+
+  <HorizontalCard
+    title="Portfolio Website"
+    img="/post_img.webp"
+    desc="I will design a custom portfolio website according to your needs."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Professional CV"
+    img="/post_img.webp"
+    desc="I will write a professional CV using Latex which can be exported in any file format."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Cover Letter"
+    img="/post_img.webp"
+    desc="I will write a proffesional cover letter using Latex which can be exported in any file format."
+    url="#"
+  />
+</BaseLayout>

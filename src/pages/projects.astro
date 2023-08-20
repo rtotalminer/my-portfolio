@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Finished Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Maze Game"
+    img="/post_img.webp"
+    desc="A top down 2D dungeon crawler located inside a myraid of maze rooms, where the player has to collect coin and escape, with NPCs who give out quests and a lighting system."
+    url="#"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="NFT Minting Site"
+    img="/post_img.webp"
+    desc="A website where you can mint custom NFTs, this is all using a test network."
+    url="#"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Ongoin Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Angular Webstore"
+    img="/post_img.webp"
+    desc="An full-fledged web store with authentication and a fake store using Angular and Firebase, built in collaberation with a friend."
+    url="#"
+    badge="FOSS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Pycoin"
+    img="/post_img.webp"
+    desc="A blockchain made in Python with rudermentary security and a front end site to view and edit the blockchain, it also connects to peers."
+    url="#"
+  />
+</BaseLayout>

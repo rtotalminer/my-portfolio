@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    After gaining my high school diploma, I enrolled onto a higher education course for mathematics and statstics, I continued to learn programming and landed a job after finishing my diploma. I recently resigned to embark on a BSc in Physics which I am currently enrolled onto. I have experience working with both back end and front end services. I am currently freelancing where my niche is making portfolio websites (such as this one) and proffesional CV writing using the skills I gained working in a professional enviroment.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Diploma of Higher Education in Mathematical Sciences"
+      subtitle="2020 to 2021 at The Open University, Milton Keynes, England"
+    />
+    <TimeLineElement
+      title="Level 3 Software Development"
+      subtitle="2022 to 2023 with the British Computer Society (BCS)"
+    />
+    <TimeLineElement
+      title="BSc Physics"
+      subtitle="2023 - Ongoing at Swansea University, Wales"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Work History</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Software Developer"
+      subtitle="From 01/2022 to 03/2023 at Transition Computing, Milton Keynes, England"
+    >
+      I worked as a full-stack developer where I incoperated APIs into the base system as requested by a client, the API would fetch company infomation and automatically populate the database, I also worked closely wth a client to deliver front-end UI changes, wrote business reports in SQL and specifications in Latex and Word and optimised server-side rendering of table data.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Cleaner"
+      subtitle="From 03/2023 to 08/2023"
+    >
+      After enrolling onto my BSc for Physics, I resgined at Transition Computing and started doing private Mathematics exams to increase my chances of entry, I therefore took on a part-time cleaning role too supplement my expenses.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <p>7 GCSE qualifications.</p>
+    </li>
+    <li>
+      <p>2 A-Level qualifications in Maths and Higher Maths.</p>
+    </li>
+    <li>
+      <p>Diploma of Higher Education in Mathematical Sciences.</p>
+    </li>
+    <li>
+      <p>Level 3 Software Engineer accredited by the BCS.</p>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Python</li>
+    <li>Javascript</li>
+    <li>Git</li>
+    <li>Angular</li>
+    <li>.NET</li>
+    <li>Server Hosting</li>
+    <li>Latex</li>
+    <li>Astro</li>
+    <li>Solidity</li>
+    <li>C#</li>
+  </ul>
+</BaseLayout>
